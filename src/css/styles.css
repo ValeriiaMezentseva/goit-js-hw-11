@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#search-form {
+  font: inherit;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: rgb(122, 0, 128);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.search-form__input {
+  font-size: 18px;
+    font-weight: 700;
+  border: 2px solid white;
+border-radius: 5px;
+padding: 5 10px;
+}
+.search-form__btn {
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  /* border: none; */
+}
+
+.search-form__btn:hover,
+.search-form__btn:focus {
+  color: rgb(122, 0, 128);
+
+}
+
+main {
+  margin-top: 70px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.photo-link {
+  color: inherit;
+  text-decoration: none;
+  flex-basis: calc(100% / 4 - 20px);
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+}
+
+.photo-img {
+  width: 100%;
+ display: block;
+  object-fit: cover;
+  height: 300px;
+}
+
+.info {
+  display: flex;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+.info-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+font-size: 16px;
+}
+.info-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.info-item b {
+  margin-bottom: 10px;
+}
+
+.photo-img:hover {
+  transform: scale(1.03);
+  border-radius: 4px;
+}
+
+button.load-more {
+  display: block;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgb(122, 0, 128);
+  color: #ffffff;
+  border-radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.load-more.is-hidden {
+  display: none;
+}
